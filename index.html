@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        #judul {
+            background-color: antiquewhite;
+            padding:15px ;
+            margin: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 350px;
+            box-sizing: 3px 3px 5px grey;
+            box-shadow: 3px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid;
+        }
+
+        .form-group {
+            margin-block: 15px;
+            margin-inline: 25px;
+        }
+
+        button {
+            background-color: bisque;
+            width: 250px;
+            color: brown;
+            padding: 3px;
+            border: 0px;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px brown;
+        }
+
+        button:hover {
+            background-color: rgb(250, 239, 226);
+        }
+
+        .btn-clear {
+            width: 105px;
+        }
+
+        .btn-clear:hover {
+            background-color: rgb(250, 239, 226);
+        }
+    </style>
+
+<body>
+    <h3 id="judul">Belajar Website</h3>
+    <hr>
+    <form action="">
+        <div class="form-group">
+            <label for="nama" class="label-group">Nama:</label><br>
+            <input
+                type="text"
+                class="input-group"
+                name="Nama"
+                placeholder="Input your name" required
+                >
+        </div>
+        <div class="form-group">
+            <label for="nama" class="label-group">Alamat:</label><br>
+            <input
+                type="text"
+                class="input-group"
+                name="Nama"
+                placeholder="Input your address" required
+                >
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-sm btn-primary ">Simpan</button>
+            <button type="reset" class="btn-clear">Clear</button>
+        </div>
+        <hr>
+    </form>
+    <script>
+        let judul = document.getElementById('judul')
+
+        judul.innerHTML = customJudul('Belajar Membuat Website di Hacktiv8')
+        function customJudul(params) {
+            return params;
+        }
+    </script>
+</body>
+</html>
