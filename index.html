@@ -13,7 +13,7 @@
             border-radius: 10px;
         }
 
-        input {
+        .input-group {
             width: 350px;
             box-sizing: 3px 3px 5px grey;
             box-shadow: 3px;
@@ -48,6 +48,15 @@
         .btn-clear:hover {
             background-color: rgb(250, 239, 226);
         }
+
+        .select-group {
+            display: block;
+            width: 350px;
+            box-shadow: 3px 3px 3px gray;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ededed;
+        }
     </style>
 
 <body>
@@ -66,11 +75,29 @@
         <div class="form-group">
             <label for="nama" class="label-group">Alamat:</label><br>
             <input
+                class="input-group"
                 type="text"
                 class="input-group"
                 name="Nama"
                 placeholder="Input your address" required
                 >
+        </div>
+        <div class="form-group">
+            <label for="nama" class="label-group">Alamat:</label><br>
+            <input
+                type="text"
+                class="input-group"
+                name="Nama"
+                placeholder="Input your address" required
+                >
+        </div>
+        <div class="form-group">
+            <label for="" class="label-group">jenis Kelamin</label>
+            <select name="jenis-kelamin" class="select-group">
+                <option value="-" selected disabled>Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-sm btn-primary ">Simpan</button>
